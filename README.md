@@ -11,6 +11,7 @@
 2. Run `.\docker.ps1`
 
     1. If it don't work, Run `Set-ExecutionPolicy RemoteSigned` on Powershell with Administrator.
+    2. It is needed to rewrite path to your path.
 
 3. Run `npm init` in docker.
 
