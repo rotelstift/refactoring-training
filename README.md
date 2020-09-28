@@ -11,3 +11,7 @@
 2. Run `.\docker.ps1`
 
     1. If it don't work, Run `Set-ExecutionPolicy RemoteSigned` on Powershell with Administrator.
+
+3. Run `npm init` in docker.
+
+4. Run `yarn add --dev jest` in docker.
