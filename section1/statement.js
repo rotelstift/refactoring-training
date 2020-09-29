@@ -53,3 +53,4 @@ function statement (invoice, plays) {
 }
 
 console.log(statement(invoices[0], plays));
+module.exports = statement;
