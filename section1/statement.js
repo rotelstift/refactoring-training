@@ -1,6 +1,10 @@
 const plays = require("./plays.json");
 const invoices = require("./invoices.json");
 
+function playFor(aPerformance) {
+    return plays[aPerformance.playID];
+}
+
 function amountFor(aPerformance, play) {
     let result = 0;
     switch (play.type) {
@@ -38,7 +42,7 @@ function statement (invoice, plays) {
     ).format;
 
     for (let perf of invoice.performances) {
-        const play = plays[perf.playID];
+        const play = playFor(perf);
         let thisAmount = amountFor(perf, play);
 
         // ボリューム特典のポイントを加算
