@@ -42,7 +42,6 @@ function statement (invoice, plays) {
     ).format;
 
     for (let perf of invoice.performances) {
-        let thisAmount = amountFor(perf);
 
         // ボリューム特典のポイントを加算
         volumeCredits += Math.max(perf.audience - 30, 0);
