@@ -1,4 +1,4 @@
-FROM node:13.7.0
+FROM node:latest
 
 ENV USER rotelstift
 ENV HOME /home/${USER}

@@ -15,4 +15,8 @@
 
 3. Run `npm init` in docker.
 
+    1. Input test statement as jest.
+
 4. Run `yarn add --dev jest` in docker.
+
+5. Run `npm test [testfile]` in docker.
